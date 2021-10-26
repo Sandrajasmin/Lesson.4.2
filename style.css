@@ -1,0 +1,89 @@
+:root{
+    --black: #000;
+    --blue: blue;
+    --green:green;
+    --white: #FFF;
+    --base-font-size: 3rem;
+    --base-padding: 0.1rem;
+
+}
+
+h1{
+    margin-bottom: 0;
+    color: var(--blue);
+    font-size: var(--base-font-size);
+    padding: var(--base-padding);
+}
+
+h2 {
+    margin-bottom: 0;
+    color: var(--green);
+    font-size: var(--base-font-size);
+    padding: var(--base-padding);
+}
+
+h3{
+    margin-bottom: 0;
+    font-size: var(--base-font-size);
+    padding: var(--base-padding);
+}
+
+.ball {
+    position: relative;
+    top: 200px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: hotpink;
+    border-radius: 50%;
+    /* center align text in object*/
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    /* animation*/
+    animation-name: mybounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.loop-it{
+    animation-iteration-count: infinite;
+}
+
+@keyframes mybounce {
+0% {
+    top:300px
+}
+
+50% {
+    top: 0;
+}
+
+100% { 
+    top:300px
+}
+}
+
+/*
+animation-name: ;
+-name to be used in the @keyframe
+
+animation:duration: ;
+-How long the animation should run
+
+animation-iteration-count: ; 
+-How many times the animation should happen/run
+
+animation-fill-mode: ;
+-What style should apply before/after animation has run
+
+animation-delay: ;
+-The delay before the animation starts
+
+animation-timing-function: ;
+-Manage acceleration in the animation
+
+animation-direction: ;
+-Direction the animation should tun in- it can be reversed.
+*/
+
